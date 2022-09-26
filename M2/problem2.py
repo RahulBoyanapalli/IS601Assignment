@@ -7,9 +7,9 @@ a4 = [10.01, -12.22, 0.23, 19.20, -5.13, 3.12]
 def process_array(num, arr):
     print("\nProcessing Array({}): \n\n".format(num))
     print(arr)
-    total = 0.00
+    total = sum(arr)
     # TODO add necessary code here for sum; every number must have two decimal places shown
-    print("\nThe total is {}:\n".format(total))
+    print("\nThe total is : {:0.2f} \n".format(total))
 
 
 print("Problem 2")

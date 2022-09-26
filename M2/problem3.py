@@ -9,6 +9,12 @@ def process_array(num, arr):
     print(arr)
     print("\nPositive Output:\n")
     # TODO add new code here to print the desired result
+    if type(arr[0])!=str:
+        Positive_Output=[-1*odd if (odd)<0 else (odd) for odd in arr ]
+    else:
+        b=[int(ine) for ine in arr]
+        Positive_Output=[odd[1:] if odd.startswith('-') else (odd) for odd in a4 ]
+    print(Positive_Output)
 
 
 print("Problem 3")
