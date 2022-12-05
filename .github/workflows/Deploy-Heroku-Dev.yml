@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - dev
-      - Flask_Sample
+      - MiniProject2
 
 # Your workflows jobs.
 jobs:
