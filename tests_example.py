@@ -1,10 +1,9 @@
 import pytest
-import pytest
 # make sure there's an __init__.py in this tests folder and that
-# the tests  is in the same folder as the IcecreamMachine stuff
+# the tests folder is in the same folder as the IcecreamMachine stuff
 from IcecreamMachine import IceCreamMachine
-#this is an example test showing  to cascade fixtures to build up state
-#test file
+#this is an example test showing how to cascade fixtures to build up state
+
 @pytest.fixture
 def machine():
     icm = IceCreamMachine()
@@ -28,4 +27,3 @@ def second_order(first_order, machine):
 
 def test_production_line(second_order):
     assert second_order is not None
-#na
